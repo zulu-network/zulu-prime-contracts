@@ -126,13 +126,13 @@ contract L2EthToken is IEthToken, ISystemContract {
     /// @dev This method has not been stabilized and might be
     /// removed later on.
     function name() external pure override returns (string memory) {
-        return "Ether";
+        return "ZULU";// TODO RENAME AS ZULU
     }
 
     /// @dev This method has not been stabilized and might be
     /// removed later on.
     function symbol() external pure override returns (string memory) {
-        return "ETH";
+        return "ZULU"; // TODO RENAME AS ZULU
     }
 
     /// @dev This method has not been stabilized and might be
