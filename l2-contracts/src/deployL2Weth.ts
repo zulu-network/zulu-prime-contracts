@@ -88,7 +88,7 @@ async function main() {
         ethers.constants.HashZero
       );
 
-      const proxyInitializationParams = L2_WETH_INTERFACE.encodeFunctionData("initialize", ["Wrapped Ether", "WETH"]);
+      const proxyInitializationParams = L2_WETH_INTERFACE.encodeFunctionData("initialize", ["Wrapped ZULU", "WZULU"]);
       const l2ERC20BridgeProxyConstructor = ethers.utils.arrayify(
         abiCoder.encode(["address", "address", "bytes"], [l2WethImplAddr, l2GovernorAddress, proxyInitializationParams])
       );
